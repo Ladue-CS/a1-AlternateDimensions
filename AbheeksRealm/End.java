@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // End Class
 // Produces an ending based on the win condition
 
@@ -101,10 +103,6 @@ class End{
   // Print method (for printing and then entering a newline)
   private static void print(String i){
     System.out.println(i);
-  }
-  // printStay method (for printing and remaining on the same line)
-  private static void printStay(String i){
-    System.out.print(i);
   }
   // Typewriter method (for printing in a typewriter fashion, and then entering a newline)
   private static void typewriter(String text, double delay, boolean random){

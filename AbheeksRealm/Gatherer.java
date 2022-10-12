@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // Gatherer Class
 // Allows for the usage of the Olivia mechanic
 
@@ -113,10 +115,6 @@ public class Gatherer {
   private static void print(String i){
     System.out.println(i);
   }
-  // printStay method (for printing and remaining on the same line)
-  private static void printStay(String i){
-    System.out.print(i);
-  }
   // Typewriter method (for printing in a typewriter fashion, and then entering a newline)
   private static void typewriter(String text, double delay, boolean random){
     for (char c : text.toCharArray()){
@@ -133,12 +131,6 @@ public class Gatherer {
   // Clear method (for clearing the console screen and moving to top)
   private static void clear(){
     System.out.println("\033[H\033[2J");
-  }
-  // Wait method (for waiting integer amounts of seconds)
-  private static void wait(int c){
-    try{
-      Thread.sleep(c*1000);
-    }catch (Exception e){}
   }
   // deciWait method (for a more precise waiting, allowing doubles)
   private static void deciWait(double x){

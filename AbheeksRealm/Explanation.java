@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // Explanation Class
 // Explains the game for the new save
 
@@ -80,7 +82,7 @@ class Explanation{
           }
       // Create response box and get answer
       print("\u001b[0m\n┌─\033[4mEnter Option Number\033[0m─┐");
-      print("|                     |");
+      print("│                     │");
       printStay("└─────────────────────┘\033[F\r|          \u001b[34m");
       // Check if valid
       response = sc.nextLine();

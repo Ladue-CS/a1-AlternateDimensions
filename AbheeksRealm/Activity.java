@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // Activity Handler
 // Handles Activites
 
@@ -136,38 +138,10 @@ class Activity{
     System.out.println(i);
   }
   // printStay method (for printing and remaining on the same line)
-  private static void printStay(String i){
-    System.out.print(i);
-  }
-  // Typewriter method (for printing in a typewriter fashion, and then entering a newline)
-  private static void typewriter(String text, double delay, boolean random){
-    for (char c : text.toCharArray()){
-      System.out.print(c);
-      if (random == false){
-        deciWait(delay);
-      }else{
-        double randomNum = (Math.random()*(delay*1.25))+delay;
-        deciWait(randomNum);
-      }
-    }
-    print("\n");
-  }
+
   // Clear method (for clearing the console screen and moving to top)
   private static void clear(){
     System.out.println("\033[H\033[2J");
-  }
-  // Wait method (for waiting integer amounts of seconds)
-  private static void wait(int c){
-    try{
-      Thread.sleep(c*1000);
-    }catch (Exception e){}
-  }
-  // deciWait method (for a more precise waiting, allowing doubles)
-  private static void deciWait(double x){
-    try{
-      double waitDuration = x*1000;
-      Thread.sleep((int) waitDuration);
-    }catch(Exception e){}
   }
   // RNG machine (for a random number generator)
   private int genRandom(int range, int min){

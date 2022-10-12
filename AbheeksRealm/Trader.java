@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // Trader Class
 // Does trading
 
@@ -84,6 +86,7 @@ class Trader{
     }
     invIteration++;
     // Trade loop
+    inTrade = true;
     while (inTrade == true){
       print("\n\033[0m-- Mr. White's Inventory --");
       for (int i = 0; i < inventory.length; i++){

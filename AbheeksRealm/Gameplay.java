@@ -1,3 +1,5 @@
+package AbheeksRealm;
+
 // Gameplay Class
 // Implements the Looper for Gameplay
 
@@ -27,7 +29,6 @@ class Gameplay{
   static private boolean timerFinished, inputReceived, inSpecialActivity;
   static private boolean wonGame, attemptedTrade;
   static private boolean coolOff, coolingOff;
-  static private boolean diverLocked, abheekLocked;
 
   // String
   static private String[] gameplayButtons, resourceTypes;
@@ -195,7 +196,7 @@ class Gameplay{
       
       // Give response box
       print("\u001b[0m\n┌─\033[4mEnter Option Number\033[0m─┐");
-      print("|                     |");
+      print("│                     │");
       printStay("└─────────────────────┘\033[F\r|         \u001b[34;1m");
       input = sc.nextLine();
 
